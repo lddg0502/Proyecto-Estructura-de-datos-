@@ -2,13 +2,11 @@ package proyecto.final1;
 
 public class Almacen {
     private String name;
-    private String productos;
-    private int cantProductos;
+    private ListaProductos productos;
 
-    public Almacen(String name, String productos, int cantProductos) {
+    public Almacen(String name, ListaProductos productos) {
         this.name = name;
         this.productos = productos;
-        this.cantProductos = cantProductos;
     }
 
     public String getName() {
@@ -19,21 +17,12 @@ public class Almacen {
         this.name = name;
     }
 
-    public String getProductos() {
+    public ListaProductos getProductos() {
         return productos;
     }
 
-    public void setProductos(String productos) {
+    public void setProductos(ListaProductos productos) {
         this.productos = productos;
     }
-
-    public int getCantProductos() {
-        return cantProductos;
-    }
-
-    public void setCantProductos(int cantProductos) {
-        this.cantProductos = cantProductos;
-    }
-    
-    
+  
 }

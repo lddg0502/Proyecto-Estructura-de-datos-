@@ -2,9 +2,9 @@ package proyecto.final1;
 
 public class Grafo {
     protected int numVertices;
-    protected static int maxVertices = 20;
     protected Vertice [] verts;
     protected int [][] matAd;
+    protected int peso;
     
     public Grafo(int max){
         matAd = new int[max][max];
@@ -15,5 +15,9 @@ public class Grafo {
                 numVertices = 0;
             }      
         }           
-    }    
+    }
+
+    public void agregarVertice(String nombre){
+        
+    }
 }
